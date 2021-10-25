@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-header {
+  font-size: 30px;
+  color: grey;
+}
+.login-container {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+h1 {
+  color: white;
+  font-size: 140px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 100px;
+}
+.name {
+  text-align: left;
+}
+video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: -1;
+  padding: 0px;
+}

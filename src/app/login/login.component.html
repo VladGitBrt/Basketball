@@ -1,0 +1,43 @@
+<div class="contain">
+  <video
+    src="../../assets/img/basketball_2.mp4"
+    onloadedmetadata="this.muted = true"
+    oncanplay="this.play()"
+    loop
+  ></video>
+  <h1>THIS IS WHY WE PLAY</h1>
+  <div class="login-container">
+    <h2 class="text-header">Login</h2>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter email" #emailInput />
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" #passInput />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </p>
+    <p>
+      <button mat-stroked-button>Login</button>
+      <button
+        (click)="loginWithGoogle()"
+        mat-stroked-button
+        class="google-login-btn"
+      >
+        Google
+      </button>
+    </p>
+  </div>
+</div>

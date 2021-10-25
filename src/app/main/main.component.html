@@ -1,0 +1,70 @@
+<div class="container">
+  <header>
+    <div class="config">
+      <div class="logo">
+        <p id="medium">DUNK</p>
+      </div>
+      <div class="top">
+        <a href="#">About us</a>
+        <a [routerLink]="['account', socialAuthService.authState]">Account</a>
+        <p *ngIf="socialAuthService.authState | async as socialUser">
+          Hello, {{ socialUser.name }}
+        </p>
+        <button routerLink="courts" class="view-button">View Courts</button>
+      </div>
+    </div>
+  </header>
+  <div class="poster">
+    <div class="poster-pos">
+      <h1>Gather.Play.Improve</h1>
+      <p id="info">
+        Find basketball players from your town and gahter to play.
+      </p>
+      <button routerLink="courts" class="view-button">View Courts</button>
+    </div>
+  </div>
+  <div class="trends">
+    <div class="trends-cont">
+      <p style="margin: 20px; font-weight: bold; font-size: 12px">
+        &copy; TRENDING ON DUNK
+      </p>
+      <div id="blockbuild">
+        <div class="blocks">
+          <p class="num">01</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+        <div class="blocks">
+          <p class="num">02</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+        <div class="blocks">
+          <p class="num">03</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+        <div class="blocks">
+          <p class="num">04</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+        <div class="blocks">
+          <p class="num">05</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+        <div class="blocks">
+          <p class="num">06</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
+          animi id ab.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

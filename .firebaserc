@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "basketball-app-b11ff": {
+      "hosting": {
+        "basketball-app": [
+          "basketball-app-b11ff"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "basketball-app-b11ff"
+  }
+}

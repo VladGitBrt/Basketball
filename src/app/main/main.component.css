@@ -1,0 +1,206 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s linear;
+}
+button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s linear;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-bottom: 1px solid black;
+  position: fixed;
+  color: white;
+  top: 0px;
+  width: 100%;
+  flex-wrap: nowrap;
+  z-index: 10;
+}
+a,
+p {
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px 0px 20px;
+}
+a:visited {
+  color: white;
+}
+#medium {
+  justify-self: left;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+}
+.poster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-image: url(../../assets/img/basketball-wallpaper-22.jpg); /*poster BG*/
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 1030px) {
+  a:not(.learnmore) {
+    display: none;
+  }
+  .poster {
+    padding-bottom: 50px;
+  }
+}
+h1 {
+  font-size: 70px;
+  color: white;
+  font-weight: lighter;
+}
+#info {
+  font-size: 20px;
+  color: white;
+}
+#b2 {
+  color: black;
+  background-color: gold;
+}
+.trends {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001b48;
+}
+.trends-cont {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.blocks {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  color: white;
+}
+#blockbuild {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.num {
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 900;
+  opacity: 0.3;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 70vw;
+  height: 40vh;
+  display: flex;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.footbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: footbar;
+  height: 50px;
+  padding-left: 20px;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 450px;
+  gap: 5px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.tags-p {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.config {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  color: white;
+}
+.top {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-end;
+}
+.poster-pos {
+  width: 80vw;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.footbar-p {
+  color: gray;
+  padding-right: 30px;
+}
+.post {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+.post-image {
+  display: flex;
+  flex-direction: row;
+}
+.learnmore {
+  text-decoration: underline;
+}
+.content {
+  width: 900px;
+  display: flex;
+}

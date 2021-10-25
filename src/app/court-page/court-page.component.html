@@ -1,0 +1,25 @@
+<div class="court-page-container">
+  <h1>{{ name }}</h1>
+  <div id="map" class="found-court"></div>
+  <div class="schedule">
+    <div class="timetable">
+      <h1>Games time</h1>
+      <ul>
+        <li *ngFor="let time of currentCourtTime">{{ time }}</li>
+      </ul>
+    </div>
+    <button
+      mat-button
+      class="btn"
+      (click)="registerUser(socialAuthService.authState)"
+    >
+      I`m in
+    </button>
+    <p>Users income</p>
+    <ul>
+      <li *ngFor="let user of logedUsers">
+        Name: {{ user.name }} Enail: {{ user.email }}
+      </li>
+    </ul>
+  </div>
+</div>

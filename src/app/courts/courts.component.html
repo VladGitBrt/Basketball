@@ -1,0 +1,22 @@
+<div class="courts-container">
+  <router-outlet></router-outlet>
+  <div class="courts">
+    <h1>Available courts</h1>
+    <div class="courtCard">
+      <div class="court1">
+        <p>School #30</p>
+        <div id="map0" class="map-size"></div>
+        <button mat-button [routerLink]="['courtpage/1']">Learn more...</button>
+      </div>
+      <div class="court2"></div>
+    </div>
+    <div class="courtCard">
+      <div class="court1">
+        <p>Carolina</p>
+        <div class="map-size" id="map1"></div>
+        <button mat-button [routerLink]="['courtpage/2']">Learn more...</button>
+      </div>
+      <div class="court2"></div>
+    </div>
+  </div>
+</div>
