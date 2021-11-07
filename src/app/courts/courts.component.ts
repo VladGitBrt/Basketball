@@ -22,14 +22,14 @@ export class CourtsComponent implements OnInit {
       lat: 28.50335,
       lon: 49.248528,
       name: 'School #30',
-      availableGames: ['10:45', '15:45', '19:00'],
+      availableGames: ['10:45', '11:30', '16:15'],
     },
     {
       id: 1,
       lat: 28.405557,
       lon: 49.224227,
       name: "Basketball court 'Carolina'",
-      availableGames: ['12:30', '16:45', '22:00'],
+      availableGames: ['12:30', '15:40', '22:10'],
     },
   ];
   constructor() {

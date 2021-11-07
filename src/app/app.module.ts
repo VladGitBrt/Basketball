@@ -13,6 +13,7 @@ import { GoogleLoginProvider, SocialLoginModule } from 'angularx-social-login';
 import { CourtsComponent } from './courts/courts.component';
 import { CourtPageComponent } from './court-page/court-page.component';
 import { AccountComponent } from './account/account.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AccountComponent } from './account/account.component';
     AppRoutingModule,
     MatIconModule,
     SocialLoginModule,
+    FormsModule,
   ],
   providers: [
     {
